@@ -1,0 +1,14 @@
+/* ------------------------ CSS Demo ----------------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/*----------------- Gobal Styles ------------------*/
+
+body{
+    background-color: #6981FA;
+}
