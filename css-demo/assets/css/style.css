@@ -7,8 +7,43 @@ html {
 *:after {
   box-sizing: inherit;
 }
-/*----------------- Gobal Styles ------------------*/
-
 body{
-    background-color: #6981FA;
+    background-color: #F2EADF;
+    font-family: sans-serif;
 }
+/*----------------- Gobal Styles ------------------*/
+h1{
+  font-family: "press Start 2p", sans-serif;
+}
+header.primary{
+  background-color: #BFA38A;
+  text-align: center;
+
+  /* Single value short hand */
+  padding: 20px; 
+
+  /* long form* could adjust left right bottom and top/
+  /* you even have padding: top left bottom right*/
+  /* even two value top/bottom or left and right */
+}
+
+header.primary h1{
+ text-shadow: 1px 3px #000000;
+ font-size: 2rem;
+ letter-spacing: 2px;
+}
+
+header.primary h1 a{
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: ;
+}
+
+header.primary ul{
+
+  padding: 0;
+}
+header.primary ul li{
+  list-style-type: none;
+}
+
