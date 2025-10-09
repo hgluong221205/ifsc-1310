@@ -179,8 +179,8 @@ color: #6387A6;
  
 }
 
-#practice tr:ntn-child(even){
-  background-color: #091626;
+#practice tr:nth-child(even){
+  background-color: rgba(0,0, 0,0.05);
 }
 
 #practice tr:hover{
