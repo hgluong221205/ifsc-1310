@@ -1,4 +1,5 @@
 /* ------------------------ CSS Demo ----------------- */
+/*  ---------------Box Sizing-----------------  */
 html {
   box-sizing: border-box;
 }
@@ -7,10 +8,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body{
-    background-color: #F2EADF;
-    font-family: sans-serif;
-}
 
 
 /* -------------- Utility Classes ----------------- */
@@ -18,9 +15,28 @@ body{
   width:80vw;
   max-width: 960px;
   margin: 20px auto;
-
 }
 
+.img-right{
+  float: right;
+  margin: 10px 0 10px 20px;
+  border:0.5px solid #000000;
+  padding:1px;
+}
+
+.img-left{
+  float: left;
+  margin: 10px 20px 10px 0;
+  border:0.5px solid #000000;
+  padding:1px;
+}
+
+.img-center{
+  display:block;
+  margin: 20px auto;
+  border:0.5px solid #000000;
+  padding:1px;
+}
 
 
 
@@ -33,6 +49,11 @@ img{
 
 
 /*----------------- Gobal Styles ------------------*/
+
+body{
+    background-color: #F2EADF;
+    font-family: sans-serif;
+}
 h1{
   font-family: "press Start 2p", sans-serif;
 }
@@ -89,14 +110,18 @@ header.primary nav a:hover{
 
 #intro h2{
   color:  #BFA38A;
-  border-bottom: 1px dotted #000000;
+  border-bottom: 1px solid #000000;
 }
 
 #content{
 display: flex;
 flex-direction: row;
 justify-content: center;
-gap: 20px
+gap: 20px;
+padding:20px 0;
+border-top:1px solid #000000;
+border-bottom:1px solid #000000;
+margin:18px auto;
 }
 
 #content .post{
@@ -122,6 +147,71 @@ transition: .9s;
   font-size: 0.7rem;
 }
 
+#practice h2{
+  color:  #BFA38A;
+  border-bottom: 1px solid #000000;
+}
+
+#practice a{
+color: #6387A6;
+}
+
+#practice a:hover{
+  text-decoration: none;
+}
+
+#practice h3{
+ border-left:10px solid #6387A6;
+ padding: 10px;
+}
+
+/*//////////////////////////////table//////////////////////////////*/
+#practice table{
+  width: 100%;
+ border:1px solid #091626;
+ border-collapse: collapse;
+}
+
+#practice caption{
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 10px;
+ 
+}
+
+#practice tr:ntn-child(even){
+  background-color: #091626;
+}
+
+#practice tr:hover{
+  background-color: #BFA38A;
+}
+#practice td:first-child{
+text-align: left;
+}
+
+
+#practice td:nth-child(n+2){
+text-align: right;
+}
+
+#practice th{
+  background-color: #6387A6;
+  color:#ffffff;
+}
+
+#practice td{
+ border:1px solid #091626;
+ padding: 5px;
+}
+
+
+
+
+
+
+
+
 aside[role="complementary"]{
   background-color: #735645;
   color: white;
@@ -140,7 +230,6 @@ aside .container a{
    text-align: right;
    margin-top: 15px;
 }
-
 
 aside .widget footer{
   display: none;
