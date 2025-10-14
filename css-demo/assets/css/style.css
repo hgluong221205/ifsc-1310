@@ -205,9 +205,39 @@ text-align: right;
  padding: 5px;
 }
 
+#practice ol{
+  list-style-type:upper-roman ;
+}
 
+#practice ol li{
+  
+}
 
+#practice ul ul {
+  color:darkblue;
+}
+#pratice dt{
+  font: bold;
+}
 
+/*W*/
+dd+dt{
+ margin-top:20px;
+}
+
+#practice dd{
+  margin-left: 0;
+}
+
+#practice blockquote{
+}
+
+#practice blockquote cite{
+  display:block;
+  font-size:0.8rem;
+  text-align: end;
+  margin-top:10px;
+}
 
 
 
@@ -242,7 +272,7 @@ aside .widget footer{
   text-align: center;
 }
 
-/* Media Queries */
+/* Media Queries to reponsive if the screeb t=is smaller than a certain size*/
 @media screen and (max-width:600px){
 header.primary nav ul{
   flex-direction: column;
@@ -256,6 +286,7 @@ header.primary nav ul a{
   margin: 20px auto;
 
 }
-
-
+/* Responsive content article*/
+#content{
+flex-direction: column;
 }
