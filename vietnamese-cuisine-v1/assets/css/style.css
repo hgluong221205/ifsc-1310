@@ -1,0 +1,28 @@
+/*  ---------------Box Sizing-----------------  */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*        Global Style                        */
+body{
+background-color: #A6774E;
+}
+
+header{
+    background-color: #055902;
+    margin:200px
+}
+
+
+
+
+
+
+
+
+/* ------------ Media Queries ----------------- */
