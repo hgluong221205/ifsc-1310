@@ -13,14 +13,39 @@ body{
 }
 
 header{
-    margin:O;
+    background-color:#9CA3AF;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+nav.primary a{
+  text-decoration: none;
+  color: white;
+}
+nav.primary ul{
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+}
+nav.primary ul li{
+  list-style-type: none;
+}
+nav.primary ul li a{
+  background-color:#6B7280;
+  padding: 20px;
+  border-radius: 12px;
+}
+h2{
+    border-left: 8px solid black;
+    padding: 7px;
 }
 
 
+.post{
+  background-color: red;
+  display:flex;
 
-
-
-
+}
 
 
 /* ------------ Media Queries ----------------- */
