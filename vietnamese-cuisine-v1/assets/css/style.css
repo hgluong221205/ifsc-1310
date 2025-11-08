@@ -10,42 +10,48 @@ html {
 
 /*        Global Style                        */
 body{
+  background-color: #F8F8F8;
 }
 
-header{
-    background-color:#9CA3AF;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-}
-nav.primary a{
-  text-decoration: none;
+.page-header{
+  background-color: darkgray;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
   color: white;
 }
-nav.primary ul{
+
+.main-navigation ul{
   display: flex;
-  justify-content: space-between;
-  padding:20px;
+  flex-direction: row;
+  justify-content: space-around;
 }
-nav.primary ul li{
+
+.main-navigation ul li{
   list-style-type: none;
 }
-nav.primary ul li a{
-  background-color:#6B7280;
-  padding: 20px;
-  border-radius: 12px;
-}
-h2{
-    border-left: 8px solid black;
-    padding: 7px;
-}
 
-
-.post{
-  background-color: red;
-  display:flex;
-
+.main-navigation ul li a{
+  text-decoration: none;
+  color:black;
+  background-color:gray;
+  padding: 5px;
+  border-radius: 6px;
 }
 
+.introduction h2{
+  border-left: 5px solid black ;
+  padding: 7px;
+}
+
+.three-article{
+  display: flex;
+  flex-direction: row;
+}
+
+article.content{
+ 
+}
 
 /* ------------ Media Queries ----------------- */
