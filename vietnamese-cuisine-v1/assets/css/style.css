@@ -8,9 +8,19 @@ html {
   box-sizing: inherit;
 }
 
+/* Utilities*/
+.container{
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+
+
 /*        Global Style                        */
 body{
   background-color: #F8F8F8;
+  margin:0;
 }
 
 .page-header{
@@ -20,6 +30,7 @@ body{
   padding: 10px;
   text-align: center;
   color: white;
+  
 }
 
 .main-navigation ul{
@@ -30,6 +41,8 @@ body{
 
 .main-navigation ul li{
   list-style-type: none;
+  padding:0;
+  width: 20%;
 }
 
 .main-navigation ul li a{
@@ -50,8 +63,15 @@ body{
   flex-direction: row;
 }
 
-article.content{
- 
+.container div{
+  display: flex;
+  gap:30px
+}
+/*----------Image Responsive-----------*/
+img{
+  max-width: 100%;
+  height:auto;
 }
 
 /* ------------ Media Queries ----------------- */
+@
