@@ -19,7 +19,7 @@ html {
 
 /*        Global Style                        */
 body{
-  background-color: #F8F8F8;
+  background-color: #fff5f1;
   margin:0;
 }
 
@@ -29,14 +29,37 @@ body{
   margin: 0;
   padding: 10px;
   text-align: center;
-  color: white;
-  
+  color: black;
+  position: relative;
+}
+.page-header::before{
+  content: "";
+  background-image: url("../img/vietnam.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+.page-header h2{
+  font-size: 2rem;
+  margin: 20px 0;
+  position: relative;
+}
+.page-header p{
+  font-size: 0.8rem;
+  margin: 20px 0;
+  position: relative;
 }
 
 .main-navigation ul{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  position: relative;
 }
 
 .main-navigation ul li{
@@ -48,19 +71,28 @@ body{
 .main-navigation ul li a{
   text-decoration: none;
   color:black;
-  background-color:gray;
+  background-color: rgba(173, 255, 47, 0.6);
   padding: 5px;
   border-radius: 6px;
+  transition: 0.9s;
 }
+
+.main-navigation nav a:hover{
+  background-color: rgba(173, 255, 47, 1);
+ }
 
 .introduction h2{
   border-left: 5px solid black ;
   padding: 7px;
 }
 
-.three-article{
-  display: flex;
-  flex-direction: row;
+article.content{
+  width: 35%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background: #fff;
 }
 
 .container div{
@@ -74,4 +106,3 @@ img{
 }
 
 /* ------------ Media Queries ----------------- */
-@
