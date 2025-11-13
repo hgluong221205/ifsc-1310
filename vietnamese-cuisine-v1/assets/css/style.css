@@ -19,7 +19,7 @@ html {
 
 /*        Global Style                        */
 body{
-  background-color: #fff5f1;
+  background-color: #FAD390;
   margin:0;
 }
 
@@ -92,7 +92,7 @@ article.content{
   padding: 10px;
   font-size: 0.8rem;
   border-radius: 10px;
-  background: #fff;
+  background: #f8f8f8;
 }
 
 .container div{
