@@ -15,17 +15,33 @@ html {
   max-width: 900px;
 }
 
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td{
+  border: 1px solid black;
+  text-align: left;
+  padding: 12px 8px;
+}
+
+
 
 
 /*        Global Style                        */
 body{
-  background-color: #FAD390;
+  background-color: #f8f8f8;
   margin:0;
 }
 
 .page-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: darkgray;
   width: 100%;
+  min-height: 250px;
   margin: 0;
   padding: 10px;
   text-align: center;
@@ -50,7 +66,7 @@ body{
   position: relative;
 }
 .page-header p{
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 20px 0;
   position: relative;
 }
@@ -59,13 +75,13 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap:40px;
   position: relative;
 }
 
 .main-navigation ul li{
   list-style-type: none;
   padding:0;
-  width: 20%;
 }
 
 .main-navigation ul li a{
@@ -98,6 +114,15 @@ article.content{
 .container div{
   display: flex;
   gap:30px
+}
+
+.page-footer{
+  width: 100%;
+  margin:0;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding:20px;
 }
 /*----------Image Responsive-----------*/
 img{
