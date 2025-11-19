@@ -1,0 +1,193 @@
+/*  ---------------Box Sizing-----------------  */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Utilities*/
+.container{
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table caption{
+  text-align: center;
+}
+table th,
+table td {
+  font-size: 0.7em;
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+
+
+
+/*        Global Style                        */
+body{
+  background-color: #f8f8f8;
+  margin:0;
+}
+
+.page-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: darkgray;
+  width: 100%;
+  min-height: 250px;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  position: relative;
+}
+.page-header::before{
+  content: "";
+  background-image: url("../img/vietnam.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+.page-header h2{
+  font-size: 2rem;
+  margin: 20px 0;
+  position: relative;
+}
+.page-header p{
+  font-size: 1rem;
+  margin: 20px 0;
+  position: relative;
+}
+
+.main-navigation ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:40px;
+  position: relative;
+}
+
+.main-navigation ul li{
+  list-style-type: none;
+  padding:0;
+}
+
+.main-navigation ul li a{
+  text-decoration: none;
+  color:black;
+  background-color: rgba(173, 255, 47, 0.6);
+  padding: 5px;
+  border-radius: 6px;
+  transition: 0.9s;
+}
+
+.main-navigation nav a:hover{
+  background-color: rgba(173, 255, 47, 1);
+ }
+
+.introduction h2{
+  border-left: 5px solid black ;
+  padding: 7px;
+}
+
+article.content{
+  width: 35%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background: #f8f8f8;
+}
+
+.container div{
+  display: flex;
+  gap:30px
+}
+
+.page-footer{
+  width: 100%;
+  margin:0;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding:20px;
+}
+/*----------Image Responsive-----------*/
+img{
+  max-width: 100%;
+  height:auto;
+}
+
+/* ------------ Media Queries ----------------- */
+@media (max-width: 800px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+  table caption{
+    display: block;
+    text-align: center;
+  }
+  thead {
+    display: none;
+  }
+  tr {
+    margin-bottom: 24px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.07);
+    padding: 10px 0 5px 0;
+    background: #fff;
+  }
+  td {
+    border: none;
+    padding: 12px 9px 12px 120px;
+    position: relative;
+    font-size: 0.98rem;
+    min-height: 36px;
+    text-align: left;
+  }
+ 
+
+.container{
+  width: 98vw;
+  max-width: none;
+}
+
+.container div{
+  flex-direction: column;
+  align-items: center;
+}
+
+}
